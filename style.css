@@ -1,0 +1,93 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+/*============ RESET ===========*/
+* {margin: 0; padding: 0;}
+body {overflow-x: hidden;}
+a {text-decoration: none;}
+
+/*============ HEADER ===========*/
+.header {width: 100%; height: 40px;	float: left; background-color: #000; z-index: 2; position: fixed;}
+.header .btn-menu {color: #FFF; padding-top: 11px; display: block; font-size: .8em;	text-align: center;}
+.header .btn-menu:hover {cursor: pointer;}
+.header .menu {width: 80%; height: 100%; margin-top: 11px; position: fixed; float: right; background-color: rgba(0, 0, 0, .9); right: 0; display: none; z-index: 2;}
+.header .menu ul {width: 100%; float: left; margin-top: 40px;}
+.header .menu li {padding: 15px; list-style-type: none;}
+.header .menu li a {color: rgb(210, 219, 227); float: left;	text-decoration: none; font-family: 'Oswald', sans-serif;}
+.header .menu li a:hover {color: #00688B;}
+.header .traco-separa {width: 90%; margin-left: 20px; margin-top: 15px; border-bottom: 1px solid #363636;}
+.header .menu img {padding-right: 5px;}
+
+/*============ INDEX ===========*/
+.contentIndex {width: 100%; float: left;}
+.contentIndex .banner {width: 100%; background-image: url(images/banner1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; float: left; padding: 250px 0;}
+.contentIndex .banner h1, h2 {font-size: 3em; font-family: 'Oswald', sans-serif; color: #FFF;text-align: center;}
+.contentIndex .banner h2 {font-size: 1.5em; font-weight: normal;}
+.contentIndex {width: 100%; float: left;}
+.contentIndex .sobre {width: 100%; float: left; padding: 50px 0;}
+.contentIndex .sobre h3 {margin-left: 4%; font-family: 'Oswald', sans-serif; font-size: 1.5em; color: #363636;}
+.contentIndex .sobre p {width: 90%; margin: 15px 0 0 4%; color: #4F4F4F; font-size: 1.2em; font-weight: normal; line-height: 28px;}
+.contentIndex .sobre span {font-size: .8em;}
+.contentIndex .video {width: 100%; float: left; padding-bottom: 50px;}
+.contentIndex .post-video {width: 95%; margin: 0 auto;}
+
+/*============ EXTINÇÃO ===========*/
+.contentExtincao {width: 100%; float: left;}
+.contentExtincao .banner {width: 100%; float: left; background-image: url(images/banner2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 200px 0;}
+.contentExtincao .banner h1, h2 {font-size: 3em; font-family: 'Oswald', sans-serif; color: #FFF; text-align: center; margin: 0 2%;}
+.contentExtincao .banner h2 {font-size: 1.5em; font-weight: normal;}
+.contentExtincao .principal {width: 100%; float: left; display: table; padding: 50px 0;}
+.contentExtincao .principal .artigo {width: 100%; float: left; padding-bottom: 20px;}
+.contentExtincao .principal .artigo h3 {font-size: 2.1em; font-family: 'Oswald', sans-serif; color: #4F4F4F; margin-left: 5%;}
+.contentExtincao .principal .artigo p {text-align: justify; float: left; margin: 20px 5% 0 5%; color: #696969;}
+.contentExtincao .principal .artigo figure {display: none;}
+
+/*============ MUDANÇAS CLIMÁTICAS ===========*/
+.contentMudancas {width: 100%; float: left;}
+.contentMudancas .banner {width: 100%; float: left; background-image: url(images/banner3.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 200px 0;}
+.contentMudancas .banner h1, h2 {font-size: 4em; font-family: 'Oswald', sans-serif; color: #FFF; text-align: center; margin: 0 2%;}
+.contentMudancas .banner h2 {font-size: 2em; font-weight: normal;}
+
+.contentMudancas .sobre {width: 100%; float: left; padding: 50px 0;}
+.contentMudancas .sobre .descricao {width: 90%; margin: 0 auto;}
+.contentMudancas .sobre .descricao h3 {font-size: 1.8em; font-family: 'Oswald', sans-serif; color: #4F4F4F;}
+.contentMudancas .sobre .descricao p {color: #696969; margin-top: 20px; font-family: sans-serif;}
+.contentMudancas .sobre .descricao span {font-size: .8em;}
+.contentMudancas .sobre .descricao figure {width: 100%; margin: 50px 0; display: table; text-align: center;}
+.contentMudancas .sobre .descricao figure img {width: 100%; display: table-cell;}
+.contentMudancas .sobre .descricao .video {width: 100%; margin-top: 50px;}
+
+/*============ FOOTER ===========*/
+.footer {width: 100%; padding: 12px 0; float: left; background-color: #1C1C1C;}
+.footer h6 {font-size: .8em; font-weight: normal; font-family: 'Arial'; color: rgba(255, 255, 255, .3); text-align: center;}
+
+/*============= RESPONSIVE =============*/
+@media screen and (min-width: 480px) {
+	.contentMudancas .sobre .descricao figure img {width: 50%; margin-left: 1%;}
+}
+@media screen and (min-width: 768px) {
+	.contentIndex .sobre p {width: 60%;}
+	.contentMudancas .sobre .descricao figure img {width: 330px;}
+}
+@media screen and (min-width: 800px) {
+	.header  {height: 80px; background-color: rgba(0, 0, 0, .5);}
+	.header .btn-menu {display: none;}
+	.header .menu img {display: none;}
+	.header .traco-separa {display: none;}
+	.header .menu {width: auto; height: 30px; line-height: 0; padding-top: 0; margin-top: 3px; float: right; display: block !important; background-color: transparent;}
+	.header .menu ul {margin: 17px 160px 0 0; list-style-type: none;}
+	.header .menu li {padding: 0; float: left;}
+	.header .menu li a {font-size: 1.3em; padding: 20px; color: #FFF;}
+	.header .menu li a:hover {color: #FFF; text-decoration: underline;}
+}
+@media screen and (min-width: 980px) {
+	.contentIndex .banner h1 {font-size: 4em;}
+	.contentIndex .banner h2 {font-size: 1.8em;}
+	.contentIndex .sobre p {width: 50%;}
+	.contentExtincao .principal .artigo {height: 300px;	display: table-cell; padding-bottom: 0;}
+	.contentExtincao .principal .artigo p {width: 60%;}
+	.contentExtincao .principal .artigo figure {width: 300px; float: right; display: table-cell; margin: 0 2% 0 68%; position: absolute;}
+	.contentExtincao .principal .artigo figure img {width: 100%;}
+}
+@media screen and (min-width: 1100px) {
+	#principal .artigo figure {margin-left: 70%;}
+}
